@@ -7,11 +7,11 @@ class Form extends React.Component {
     submittedData: []
   }
 
-  handleChange = event => {
-    this.setState({
-      firstName: event.target.value
-    })
-  }
+ handleChange = event => {
+  this.setState({
+    [event.target.name]: event.target.value
+  })
+}
 
 
   handleSubmit=event=>{
